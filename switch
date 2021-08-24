@@ -1,0 +1,31 @@
+def switch():
+    a = int(input("Enter a value : "))
+    b = int(input("Enter b value : "))
+    print("Press 1 for addition \npress 2 for subtraction \npress 3 for multiplication \npress 4 for division")
+ 
+    option = int(input("your option : "))
+  
+    if option == 1:
+        result = a+b
+        print("\naddition of two numbers = ",result)
+ 
+    elif option == 2:
+        result = a-b
+        print("subtraction = ", result)
+ 
+    elif option == 3:
+        result = a*b
+        print("multiplication = ", result)
+ 
+    elif option == 4:
+        result = a/b
+        print("division = ", result)
+        
+    else:
+        result = a**b
+        print("power =", result)
+        
+    
+ 
+switch()
+ 
