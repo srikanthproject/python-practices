@@ -1,0 +1,20 @@
+import random
+number = random.randint(1, 99)
+
+playername = input("Enter your name:")
+numberofguesses = 0
+print('okay! '+ playername+ ' I am Guessing a number between 1 and 99:')
+
+while numberofguesses < 10:
+    guess = int(input())
+    numberofguesses += 1 
+    if guess < number:
+        print('Your guess is too low')
+    if guess > number:
+        print('Your guess is too high')
+    if guess == number:
+        break
+if guess == number:
+    print('congratulations You guessed the number in ' + str(numberofguesses) + ' tries!')
+else:
+    print('You did not guess the number, The number was ' + str(number))
